@@ -1,0 +1,200 @@
+@use 'services.scss';
+@use 'partners.scss';
+@import 'normalize.scss';
+@import 'fonts.scss';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width: 375px) {
+
+    .wrapper {
+        width: 315px;
+        margin: 0 auto;
+    }
+
+    .blocks {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .services {
+        .dark-shadow {
+            width: 335px;
+        }
+    
+        .light-shadow {
+            width: 295px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .logo:nth-child(n+7) {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .wrapper {
+        width: 648px;
+    }
+
+    .blocks {
+        flex-direction: row;
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+
+    .block {
+        width: 294px;
+    }
+
+    .services {
+        .title {
+            margin-bottom: 60px;
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        .dark-shadow {
+            width: 728px;
+        }
+    
+        .light-shadow {
+            width: 688px;
+        }
+    }
+
+    .partners-blocks {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .partners {
+
+        .logo {
+            width: 33.3%;
+            display: block;
+            
+            img {
+                left: 22px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .wrapper {
+        width: 904px;
+        margin: 0 auto;
+    }
+
+    .block {
+        width: 260px;
+    }
+
+    .services {
+        .dark-shadow {
+            width: 984px;
+        }
+    
+        .light-shadow {
+            width: 944px;
+        }
+    }
+
+   .partners {
+
+    .logo {
+        width: 25%;
+
+        img {
+            left: 22px;
+        }
+    }
+   }
+
+}
+
+@media (min-width: 1440px) {
+
+    .wrapper {
+        width: 1320px;
+        margin: 0 auto;
+    }
+
+    .block {
+        width: 400px;
+    }
+
+   .services {
+    .dark-shadow {
+        width: 1400px;
+    }
+
+    .light-shadow {
+        width: 1360px;
+    }
+   }
+}
+
+@media (min-width: 1920px) {
+
+    .wrapper {
+        width: 1600px;
+        margin: 0 auto;
+    }
+
+    .block {
+        width: 493px;
+    }
+
+    .services {
+        .dark-shadow {
+            width: 1880px;
+        }
+    
+        .light-shadow {
+            width: 1840px;
+        }
+    }
+
+    .partners-blocks {
+        margin: 0 100px;
+        margin-bottom: 60px;
+    }
+
+    .logo {
+        width: 430px;
+    }
+
+    .hillel {
+        border-top-left-radius: 12px;
+    }
+
+    .look {
+        border-top-right-radius: 12px;
+    }
+       
+    .infratek {
+        border-bottom-left-radius: 12px;
+    }
+
+    .ultimate {
+        border-bottom-right-radius: 12px;
+    }
+
+}
+
+
+

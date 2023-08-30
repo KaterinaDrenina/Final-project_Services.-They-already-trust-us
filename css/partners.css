@@ -1,0 +1,66 @@
+.partners {
+  padding-top: 60px;
+  background-color: #fff;
+  margin-bottom: 0px;
+}
+.partners p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgb(50, 50, 100);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.partners .logo {
+  height: 120px;
+  position: relative;
+}
+.partners .logo img {
+  position: absolute;
+  height: 48px;
+  top: 36px;
+  left: 80px;
+  border-radius: 12px 0px 0px 0px;
+  width: 217px;
+}
+.partners .hillel {
+  background-color: rgb(28, 66, 128);
+}
+.partners .wannabiz {
+  background-color: rgb(20, 54, 70);
+}
+.partners .tapgerine {
+  background-color: rgb(244, 139, 48);
+}
+.partners .look {
+  background-color: rgb(158, 77, 195);
+}
+.partners .orangear {
+  background-color: rgb(253, 147, 57);
+}
+.partners .adtellige {
+  background-color: rgb(226, 226, 228);
+}
+.partners .clickky {
+  background-color: rgb(199, 28, 54);
+}
+.partners .ecoleasing {
+  background-color: rgb(220, 243, 249);
+}
+.partners .infratek {
+  background-color: rgb(234, 234, 234);
+}
+.partners .citypark {
+  background-color: rgb(40, 34, 64);
+}
+.partners .artprint {
+  background-color: rgb(29, 69, 104);
+}
+.partners .ultimate {
+  background-color: rgb(0, 0, 0);
+}
+
+/*# sourceMappingURL=partners.css.map */

@@ -1,0 +1,79 @@
+.partners {
+    padding-top: 60px;
+    background-color: #fff;
+    margin-bottom: 0px;
+
+    p {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: rgba(50, 50, 100, 1);
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .logo {
+        height: 120px;
+        position: relative;
+
+        img {
+            position: absolute;
+            height: 48px;
+            top: 36px;
+            left: 80px;
+            border-radius: 12px 0px 0px 0px;
+            width: 217px;
+        }
+    }
+
+    .hillel {
+        background-color: rgba(28, 66, 128, 1);
+    }
+        
+    .wannabiz {
+        background-color: rgba(20, 54, 70, 1);
+    }
+
+    .tapgerine {
+        background-color: rgba(244, 139, 48, 1);
+    }
+
+    .look {
+        background-color: rgba(158, 77, 195, 1);
+    }
+
+    .orangear {
+        background-color: rgba(253, 147, 57, 1);
+    }
+
+    .adtellige {
+        background-color: rgba(226, 226, 228, 1);
+    }
+
+    .clickky {
+        background-color: rgba(199, 28, 54, 1);
+    }
+
+    .ecoleasing {
+        background-color: rgba(220, 243, 249, 1);
+    }
+
+    .infratek {
+        background-color: rgba(234, 234, 234, 1);
+    }
+
+    .citypark {
+        background-color: rgba(40, 34, 64, 1);
+    }
+
+    .artprint {
+        background-color: rgba(29, 69, 104, 1);
+    }
+
+    .ultimate {
+        background-color: rgba(0, 0, 0, 1);
+    }
+}

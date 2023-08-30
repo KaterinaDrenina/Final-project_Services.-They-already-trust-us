@@ -1,0 +1,90 @@
+.services {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  position: relative;
+  border-radius: 0px 0px 12px 12px;
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+.services a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-align: left;
+  text-decoration: none;
+  color: rgb(36, 163, 255);
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+.services a::after {
+  content: "";
+  background-image: url(../images/Arrow.svg);
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 1px;
+  left: 80px;
+}
+.services a::after:hover::after {
+  color: rgb(240, 20, 90);
+}
+.services a:hover {
+  color: rgb(240, 20, 90);
+}
+.services .title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.services .dark-shadow {
+  position: absolute;
+  height: 10px;
+  bottom: -10px;
+  left: 20px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: rgb(202, 202, 219);
+}
+.services .light-shadow {
+  position: absolute;
+  height: 10px;
+  bottom: -20px;
+  left: 40px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: rgb(231, 231, 242);
+}
+
+.block div {
+  width: 92px;
+  height: 92px;
+  padding: 14px;
+  border-radius: 24px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+.block h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(36, 163, 255);
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.block p {
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+/*# sourceMappingURL=services.css.map */
