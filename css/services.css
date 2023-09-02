@@ -5,6 +5,26 @@
   border-radius: 0px 0px 12px 12px;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
+.services::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  bottom: -10px;
+  left: 20px;
+  right: 20px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: rgb(202, 202, 219);
+}
+.services::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  bottom: -20px;
+  left: 40px;
+  right: 40px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: rgb(231, 231, 242);
+}
 .services a {
   font-size: 14px;
   font-weight: 700;
@@ -26,11 +46,13 @@
   top: 1px;
   left: 80px;
 }
-.services a::after:hover::after {
-  color: rgb(240, 20, 90);
-}
 .services a:hover {
   color: rgb(240, 20, 90);
+}
+.services a:hover::after {
+  background-image: url(../images/Arrowhover.svg);
+  height: 12px;
+  width: 12px;
 }
 .services .title {
   font-size: 30px;
@@ -43,22 +65,6 @@
   -webkit-text-fill-color: transparent;
   margin-top: 10px;
   margin-bottom: 30px;
-}
-.services .dark-shadow {
-  position: absolute;
-  height: 10px;
-  bottom: -10px;
-  left: 20px;
-  border-radius: 0px 0px 12px 12px;
-  background-color: rgb(202, 202, 219);
-}
-.services .light-shadow {
-  position: absolute;
-  height: 10px;
-  bottom: -20px;
-  left: 40px;
-  border-radius: 0px 0px 12px 12px;
-  background-color: rgb(231, 231, 242);
 }
 
 .block div {

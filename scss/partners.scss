@@ -14,21 +14,33 @@
         margin-bottom: 30px;
         margin-top: 0;
     }
-
-    .logo {
-        height: 120px;
-        position: relative;
-
-        img {
-            position: absolute;
-            height: 48px;
-            top: 36px;
-            left: 80px;
-            border-radius: 12px 0px 0px 0px;
-            width: 217px;
-        }
     }
 
+    .partners-blocks {
+
+        max-width: 1720px;
+
+        .logo {
+            height: 120px;
+            position: relative;
+
+            a {
+                display: block;
+                height: 120px;
+                width: 100%;
+            }
+            
+            img {
+                    position: absolute;
+                    border-radius: 12px 0px 0px 0px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+
+    }
     .hillel {
         background-color: rgba(28, 66, 128, 1);
     }
@@ -76,4 +88,3 @@
     .ultimate {
         background-color: rgba(0, 0, 0, 1);
     }
-}

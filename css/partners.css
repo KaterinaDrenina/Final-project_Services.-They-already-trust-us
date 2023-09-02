@@ -14,52 +14,72 @@
   margin-bottom: 30px;
   margin-top: 0;
 }
-.partners .logo {
+
+.partners-blocks {
+  max-width: 1720px;
+}
+.partners-blocks .logo {
   height: 120px;
   position: relative;
 }
-.partners .logo img {
-  position: absolute;
-  height: 48px;
-  top: 36px;
-  left: 80px;
-  border-radius: 12px 0px 0px 0px;
-  width: 217px;
+.partners-blocks .logo a {
+  display: block;
+  height: 120px;
+  width: 100%;
 }
-.partners .hillel {
+.partners-blocks .logo img {
+  position: absolute;
+  border-radius: 12px 0px 0px 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hillel {
   background-color: rgb(28, 66, 128);
 }
-.partners .wannabiz {
+
+.wannabiz {
   background-color: rgb(20, 54, 70);
 }
-.partners .tapgerine {
+
+.tapgerine {
   background-color: rgb(244, 139, 48);
 }
-.partners .look {
+
+.look {
   background-color: rgb(158, 77, 195);
 }
-.partners .orangear {
+
+.orangear {
   background-color: rgb(253, 147, 57);
 }
-.partners .adtellige {
+
+.adtellige {
   background-color: rgb(226, 226, 228);
 }
-.partners .clickky {
+
+.clickky {
   background-color: rgb(199, 28, 54);
 }
-.partners .ecoleasing {
+
+.ecoleasing {
   background-color: rgb(220, 243, 249);
 }
-.partners .infratek {
+
+.infratek {
   background-color: rgb(234, 234, 234);
 }
-.partners .citypark {
+
+.citypark {
   background-color: rgb(40, 34, 64);
 }
-.partners .artprint {
+
+.artprint {
   background-color: rgb(29, 69, 104);
 }
-.partners .ultimate {
+
+.ultimate {
   background-color: rgb(0, 0, 0);
 }
 
