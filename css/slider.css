@@ -1,0 +1,57 @@
+.slider {
+  min-width: 315px;
+}
+.slider .img {
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.slider .slider-one {
+  margin-bottom: 30px;
+}
+.slider .img-one {
+  background-image: url(../images/image-mob.png);
+}
+.slider .block {
+  background-color: rgb(237, 237, 247);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 30px;
+}
+.slider .block .title {
+  margin-top: 5px;
+}
+.slider .block .subtitle {
+  color: rgb(179, 179, 186);
+  margin: 0 0 6px 0;
+}
+.slider .block .text {
+  color: rgb(179, 179, 186);
+}
+.slider .block::before {
+  content: "";
+}
+.slider .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.slider .buttons input {
+  background-image: url(../images/Ellipse-active.svg);
+  width: 17px;
+  height: 16px;
+  opacity: 20%;
+  border: none;
+  background-color: #fff;
+}
+.slider .buttons input:active {
+  opacity: 100%;
+}
+.slider .buttons input:first-child {
+  opacity: 100%;
+}
+
+/*# sourceMappingURL=slider.css.map */
