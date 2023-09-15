@@ -15,6 +15,9 @@
   margin-top: 0;
 }
 
+.partners-blocks {
+  display: grid;
+}
 .partners-blocks .logo {
   height: 120px;
   position: relative;

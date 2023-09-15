@@ -9,28 +9,29 @@
   border-top-right-radius: 12px;
 }
 .slider .slider-one {
+  display: grid;
   margin-bottom: 30px;
 }
-.slider .img-one {
+.slider .slider-one .img-one {
   background-image: url(../images/image-mob.png);
 }
-.slider .block {
+.slider .slider-one .block {
   background-color: rgb(237, 237, 247);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   padding: 30px;
 }
-.slider .block .title {
+.slider .slider-one .block .title {
   margin-top: 5px;
 }
-.slider .block .subtitle {
+.slider .slider-one .block .subtitle {
   color: rgb(179, 179, 186);
   margin: 0 0 6px 0;
 }
-.slider .block .text {
+.slider .slider-one .block .text {
   color: rgb(179, 179, 186);
 }
-.slider .block::before {
+.slider .slider-one .block::before {
   content: "";
 }
 .slider .buttons {

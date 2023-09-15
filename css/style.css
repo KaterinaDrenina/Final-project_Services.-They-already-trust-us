@@ -60,8 +60,11 @@
 .services .title {
   margin-top: 10px;
 }
-
-.block div {
+.services .blocks {
+  display: grid;
+  gap: 30px;
+}
+.services .blocks .block div {
   width: 92px;
   height: 92px;
   padding: 14px;
@@ -69,7 +72,7 @@
   background-color: rgb(255, 255, 255);
   margin-bottom: 30px;
 }
-.block h3 {
+.services .blocks .block h3 {
   font-size: 22px;
   font-weight: 700;
   line-height: 27px;
@@ -79,7 +82,7 @@
   margin-top: 0;
   margin-bottom: 15px;
 }
-.block .services-text {
+.services .blocks .block .services-text {
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
@@ -104,6 +107,9 @@
   margin-top: 0;
 }
 
+.partners-blocks {
+  display: grid;
+}
 .partners-blocks .logo {
   height: 120px;
   position: relative;
@@ -180,28 +186,29 @@
   border-top-right-radius: 12px;
 }
 .slider .slider-one {
+  display: grid;
   margin-bottom: 30px;
 }
-.slider .img-one {
+.slider .slider-one .img-one {
   background-image: url(../images/image-mob.png);
 }
-.slider .block {
+.slider .slider-one .block {
   background-color: rgb(237, 237, 247);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   padding: 30px;
 }
-.slider .block .title {
+.slider .slider-one .block .title {
   margin-top: 5px;
 }
-.slider .block .subtitle {
+.slider .slider-one .block .subtitle {
   color: rgb(179, 179, 186);
   margin: 0 0 6px 0;
 }
-.slider .block .text {
+.slider .slider-one .block .text {
   color: rgb(179, 179, 186);
 }
-.slider .block::before {
+.slider .slider-one .block::before {
   content: "";
 }
 .slider .buttons {
@@ -229,8 +236,6 @@
   background-color: rgb(245, 245, 250);
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
-  height: 100vh;
 }
 .cards .link::after {
   left: 116px;
@@ -238,25 +243,11 @@
 .cards .title {
   margin: 5px 0 30px 0;
 }
-.cards .subtitle {
-  color: rgb(36, 163, 255);
-  text-decoration: none;
-  margin: 0;
+.cards .cards-blocks {
+  display: grid;
+  gap: 30px;
 }
-.cards .text {
-  color: rgb(0, 0, 0);
-  margin: 0;
-}
-.cards .date {
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 15px;
-  letter-spacing: 1px;
-  text-align: left;
-  color: rgb(179, 179, 186);
-  text-transform: uppercase;
-}
-.cards .block {
+.cards .cards-blocks .block {
   padding: 30px;
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 8px;
@@ -265,47 +256,59 @@
   flex-direction: column;
   gap: 15px;
 }
-.cards .line {
+.cards .cards-blocks .subtitle {
+  color: rgb(36, 163, 255);
+  text-decoration: none;
+  margin: 0;
+}
+.cards .cards-blocks .date {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgb(179, 179, 186);
+  text-transform: uppercase;
+}
+.cards .cards-blocks .line {
   width: 100%;
   height: 4px;
   background-color: rgb(230, 230, 240);
   margin: 0;
 }
-.cards .card-one {
-  margin-bottom: 30px;
+.cards .cards-blocks .text {
+  color: rgb(0, 0, 0);
+  margin: 0;
 }
-.cards .card-one .img {
+.cards .cards-blocks .card-one .img {
   background-image: url(../images/card-one.png);
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
 }
-.cards .card-one .img a {
+.cards .cards-blocks .card-one .img a {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-.cards .card-two {
-  margin-bottom: 30px;
-}
-.cards .card-two .img {
+.cards .cards-blocks .card-two .img {
   background-image: url(../images/card-two.png);
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
 }
-.cards .card-two .img a {
+.cards .cards-blocks .card-two .img a {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-.cards .card-three .img {
+.cards .cards-blocks .card-three .img {
   background-image: url(../images/card-three.png);
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
 }
-.cards .card-three .img a {
+.cards .cards-blocks .card-three .img a {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -705,13 +708,6 @@ body {
   text-align: left;
 }
 
-@media (min-width: 375px) {
-  .blocks {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-}
 @media (max-width: 768px) {
   .logo:nth-child(n+7) {
     display: none;
@@ -733,204 +729,120 @@ body {
     margin-bottom: 60px;
   }
   .services .blocks {
-    width: 648px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 60px;
   }
-  .services .blocks .block {
-    width: 45%;
+  .slider .slider-one {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
   }
-  .partners-blocks {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .partners .logo {
-    width: 33.3%;
-    display: block;
-  }
-  .slider-one {
-    width: 648px;
-  }
-  .slider-one .img-one {
+  .slider .slider-one .img-one {
     background-image: url(../images/image-tablet.png);
     width: 100%;
   }
-  .slider-one .block {
-    width: 100%;
+  .slider .slider-one .text {
+    margin: 0;
   }
-  .cards-blocks {
-    position: relative;
+  .partners .partners-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
-  .cards-blocks .card-one {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 514px;
-    width: 48%;
-    margin-right: 30px;
+  .partners .partners-blocks .logo {
+    display: block;
   }
-  .cards-blocks .card-one .img {
+  .cards .cards-blocks {
+    grid-template-areas: "card-one card-two" "card-three card-three";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+  }
+  .cards .cards-blocks .card-one {
+    grid-area: card-one;
+  }
+  .cards .cards-blocks .card-one .img {
     background-image: url(../images/card-one-tablet.png);
     width: 100%;
   }
-  .cards-blocks .card-one .block {
-    height: 314px;
+  .cards .cards-blocks .card-one .block {
+    padding-bottom: 132px;
   }
-  .cards-blocks .card-two {
-    position: absolute;
-    left: 340px;
-    top: 0;
-    height: 514px;
-    width: 48%;
+  .cards .cards-blocks .card-two {
+    grid-area: card-two;
   }
-  .cards-blocks .card-two .img {
+  .cards .cards-blocks .card-two .img {
     background-image: url(../images/card-two-tablet.png);
     width: 100%;
   }
-  .cards-blocks .card-two .block {
-    height: 314px;
+  .cards .cards-blocks .card-three {
+    grid-area: card-three;
   }
-  .cards-blocks .card-three {
-    position: absolute;
-    top: 514px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 188px;
-    width: 100%;
-    margin-top: 30px;
-  }
-  .cards-blocks .card-three .img {
+  .cards .cards-blocks .card-three .img {
     background-image: url(../images/card-three-tablet.png);
     width: 100%;
   }
 }
 @media (min-width: 1024px) {
   .services .blocks {
-    width: 904px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
-  .services .blocks .block {
-    width: 28%;
+  .slider .slider-one {
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
   }
-  .partners .logo {
-    width: 25%;
-  }
-  .slider-one {
-    display: flex;
-    flex-direction: row;
-    width: 904px;
-    height: 528px;
-    margin: 0 auto;
-  }
-  .slider-one .img-one {
+  .slider .slider-one .img-one {
     background-image: url(../images/image-tabletHD.png);
     border-top-right-radius: 0;
     border-bottom-left-radius: 12px;
-    width: 43%;
+    width: 400px;
     height: 528px;
   }
-  .slider-one .block {
+  .slider .slider-one .block {
     border-top-right-radius: 12px;
     border-bottom-left-radius: 0;
-    width: 57%;
   }
-  .cards-blocks {
-    margin: 0 auto;
-    width: 904px;
+  .partners .partners-blocks {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
-  .cards-blocks .card-one {
-    width: 31%;
-    height: 556px;
-    margin-bottom: 0;
+  .cards .cards-blocks {
+    grid-template-areas: "card-one card-two card-three";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
-  .cards-blocks .card-one .img {
+  .cards .cards-blocks .card-one .img {
     background-image: url(../images/card-one-tablerhd.png);
   }
-  .cards-blocks .card-one .block {
-    height: 356px;
-  }
-  .cards-blocks .card-two {
-    width: 31%;
-    height: 556px;
-    margin-right: 30px;
-    margin-bottom: 0;
-    left: 310px;
-  }
-  .cards-blocks .card-two .img {
+  .cards .cards-blocks .card-two .img {
     background-image: url(../images/card-two-tablethd.png);
   }
-  .cards-blocks .card-two .block {
-    height: 356px;
-  }
-  .cards-blocks .card-three {
-    width: 31%;
-    height: 556px;
-    left: 620px;
-    top: 0;
-    margin-top: 0;
-  }
-  .cards-blocks .card-three .img {
+  .cards .cards-blocks .card-three .img {
     background-image: url(../images/card-three-tablethd.png);
   }
-  .cards-blocks .card-three .block {
-    height: 356px;
+  .cards .cards-blocks .card-three .block {
+    padding-bottom: 110px;
   }
 }
 @media (min-width: 1440px) {
-  .services .blocks {
-    width: 1320px;
-  }
-  .services .blocks .block {
-    width: 30%;
-  }
-  .slider-one {
-    width: 1320px;
-    height: 344px;
-    margin: 0 auto;
-  }
-  .slider-one .img-one {
+  .slider .slider-one .img-one {
     background-image: url(../images/image-desktopSD.png);
-    width: 30%;
+    height: 344px;
   }
-  .slider-one .block {
-    width: 70%;
-  }
-  .cards-blocks {
-    width: 1320px;
-    height: 450px;
-  }
-  .cards-blocks .card-one {
-    width: 32%;
-    height: 450px;
-  }
-  .cards-blocks .card-one .img {
+  .cards .cards-blocks .card-one .img {
     background-image: url(../images/card-one-desktopsd.png);
   }
-  .cards-blocks .card-one .block {
-    height: 250px;
+  .cards .cards-blocks .card-one .block {
+    padding-bottom: 92px;
   }
-  .cards-blocks .card-two {
-    width: 32%;
-    height: 450px;
-    left: 450px;
-  }
-  .cards-blocks .card-two .img {
+  .cards .cards-blocks .card-two .img {
     background-image: url(../images/card-two-desktopsd.png);
   }
-  .cards-blocks .card-two .block {
-    height: 250px;
-  }
-  .cards-blocks .card-three {
-    width: 32%;
-    height: 450px;
-    left: 900px;
-  }
-  .cards-blocks .card-three .img {
+  .cards .cards-blocks .card-three .img {
     background-image: url(../images/card-three-desktopsd.png);
   }
-  .cards-blocks .card-three .block {
-    height: 250px;
+  .cards .cards-blocks .card-three .block {
+    padding-bottom: 70px;
   }
 }
 @media (min-width: 1920px) {
@@ -938,20 +850,15 @@ body {
     padding-left: 160px;
     padding-right: 160px;
   }
-  .services .blocks {
-    width: 1600px;
-  }
-  .services .blocks .block {
-    width: 30%;
+  .slider .slider-one .img-one {
+    background-image: url(../images/image-desktop.png);
+    height: 298px;
   }
   .partners-blocks {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-  }
-  .partners-blocks .logo {
-    width: 430px;
   }
   .partners-blocks .hillel {
     border-top-left-radius: 12px;
@@ -965,49 +872,20 @@ body {
   .partners-blocks .ultimate {
     border-bottom-right-radius: 12px;
   }
-  .slider-one {
-    width: 1600px;
-    height: 298px;
-  }
-  .slider-one .img-one {
-    background-image: url(../images/image-desktop.png);
-    width: 25%;
-  }
-  .slider-one .block {
-    width: 75%;
-  }
-  .cards-blocks {
-    width: 1600px;
-    height: 430px;
-  }
-  .cards-blocks .card-one {
-    width: 32%;
-  }
-  .cards-blocks .card-one .img {
+  .cards .cards-blocks .card-one .img {
     background-image: url(../images/card-one-desktop.png);
   }
-  .cards-blocks .card-one .block {
-    height: 230px;
+  .cards .cards-blocks .card-one .block {
+    padding-bottom: 72px;
   }
-  .cards-blocks .card-two {
-    width: 32%;
-    left: 543px;
-  }
-  .cards-blocks .card-two .img {
+  .cards .cards-blocks .card-two .img {
     background-image: url(../images/card-two-desktop.png);
   }
-  .cards-blocks .card-two .block {
-    height: 230px;
-  }
-  .cards-blocks .card-three {
-    width: 32%;
-    left: 1088px;
-  }
-  .cards-blocks .card-three .img {
+  .cards .cards-blocks .card-three .img {
     background-image: url(../images/card-three-desktop.png);
   }
-  .cards-blocks .card-three .block {
-    height: 230px;
+  .cards .cards-blocks .card-three .block {
+    padding-bottom: 50px;
   }
 }
 

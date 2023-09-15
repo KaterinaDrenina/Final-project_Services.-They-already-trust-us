@@ -59,8 +59,11 @@
 .services .title {
   margin-top: 10px;
 }
-
-.block div {
+.services .blocks {
+  display: grid;
+  gap: 30px;
+}
+.services .blocks .block div {
   width: 92px;
   height: 92px;
   padding: 14px;
@@ -68,7 +71,7 @@
   background-color: rgb(255, 255, 255);
   margin-bottom: 30px;
 }
-.block h3 {
+.services .blocks .block h3 {
   font-size: 22px;
   font-weight: 700;
   line-height: 27px;
@@ -78,7 +81,7 @@
   margin-top: 0;
   margin-bottom: 15px;
 }
-.block .services-text {
+.services .blocks .block .services-text {
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
