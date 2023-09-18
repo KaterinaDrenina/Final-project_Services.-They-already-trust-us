@@ -2,7 +2,7 @@
 
     background-color: rgba(245, 245, 250, 1);
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 
     .link {
 
@@ -17,6 +17,7 @@
     }
     
     .cards-blocks {
+
         display: grid;
         gap: 30px;
 

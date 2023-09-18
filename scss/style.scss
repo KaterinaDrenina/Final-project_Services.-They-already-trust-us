@@ -2,6 +2,7 @@
 @use 'partners.scss';
 @use 'slider.scss';
 @use 'cards.scss';
+@use 'footer.scss';
 @import 'normalize.scss';
 @import 'fonts.scss';
 
@@ -208,6 +209,68 @@ body {
                     width: 100%;
                 }
             }
+        }
+    }
+
+    .footer {
+
+        display: grid;
+        grid-template-areas:
+        "info copyright"
+        "contacts contacts";
+        justify-content: space-between;
+
+        .info {
+            grid-area: info;
+            flex-direction: row;
+            padding: 0;
+            gap: 0;
+
+            .location {
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    background-color: rgba(179, 179, 186, 1);
+                    margin: 3px 10px;
+                }
+            }
+        }
+
+        .contacts {
+            grid-area: contacts;
+            flex-direction: row;
+            padding: 0;
+            gap: 0;
+            align-self: start;
+
+            .phone {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    background-color: rgba(179, 179, 186, 1);
+                    margin: 3px 10px;
+                }
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    background-color: rgba(179, 179, 186, 1);
+                    margin: 3px 10px;
+                }
+            }
+        }
+
+        .copyright {
+            grid-area: copyright;
         }
     }
 }
