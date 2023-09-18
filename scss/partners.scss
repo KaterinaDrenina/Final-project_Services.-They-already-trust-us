@@ -18,8 +18,8 @@
 
     .partners-blocks {
 
-        max-width: 1720px;
-
+        display: grid;
+        
         .logo {
             height: 120px;
             position: relative;
@@ -39,8 +39,8 @@
                 }
             }
 
-
     }
+
     .hillel {
         background-color: rgba(28, 66, 128, 1);
     }

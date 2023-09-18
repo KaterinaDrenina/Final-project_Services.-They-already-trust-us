@@ -16,7 +16,7 @@
 }
 
 .partners-blocks {
-  max-width: 1720px;
+  display: grid;
 }
 .partners-blocks .logo {
   height: 120px;

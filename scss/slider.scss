@@ -1,0 +1,98 @@
+.slider {
+    
+    min-width: 315px;
+    
+    .img {
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    
+    .slider-one {
+        display: grid;
+        margin-bottom: 30px;
+       
+        .img-one {
+            background-image: url(../images/image-mob.png);
+        }
+        
+        .block {
+            background-color: rgba(237, 237, 247, 1);
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            padding: 30px;
+            
+            .title {
+                margin-top: 5px;
+            }
+            
+            .subtitle {
+                color: rgba(179, 179, 186, 1);
+                margin: 0 0 6px 0;
+            }
+            
+            .text {
+                color: rgba(179, 179, 186, 1);
+            }
+    
+            &::before {
+                content: '';
+    
+            }
+            
+        }
+    }
+    
+    
+    
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        
+        input {
+            background-image: url(../images/Ellipse-active.svg);
+            width: 17px;
+            height: 16px;   
+            opacity: 20%;
+            border: none;
+            background-color: #fff;
+            
+            &:active {
+                opacity: 100%;
+            }
+            
+            &:first-child {
+                opacity: 100%;
+            }
+        }
+
+    }
+
+    // .second-slide {
+    //     &:active {
+            
+    //         .slider-two {
+    //             display: block;
+    //         }
+    //     }
+    // }
+    // .slider-two {
+    //     display: none;
+
+    //     .img-two {
+    //         background-image: url(../images/img-two.png);
+    //     }
+    // }
+    
+    // .slider-three {
+    //     display: none;
+       
+    //     .img-three {
+    //         background-image: url(../images/img3-mob.png);
+    //     }
+    // }
+}
