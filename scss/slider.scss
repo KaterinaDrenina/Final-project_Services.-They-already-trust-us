@@ -16,6 +16,7 @@
        
         .img-one {
             background-image: url(../images/image-mob.png);
+            background-size: cover;
         }
         
         .block {
@@ -53,7 +54,7 @@
         align-items: center;
         gap: 15px;
         
-        input {
+        button {
             background-image: url(../images/Ellipse-active.svg);
             width: 17px;
             height: 16px;   
