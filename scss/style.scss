@@ -3,6 +3,7 @@
 @use 'slider.scss';
 @use 'cards.scss';
 @use 'footer.scss';
+@use 'content.scss';
 @import 'normalize.scss';
 @import 'fonts.scss';
 
@@ -12,6 +13,10 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+main {
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 
 .wrapper {
@@ -107,7 +112,55 @@ body {
         padding-right: 60px;
     }
 
+    .content {
+
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        .content-wrapper {
+            padding-left: 60px;
+        }
+
+        .content-title {
+
+            padding-bottom: 60px;
+
+            .content-link {
+            
+                font-size: 38px;
+                font-weight: 700;
+                line-height: 46px;
+                letter-spacing: 0em;
+                text-align: left;
     
+            }
+        }
+
+        .content-block {
+
+            padding-top: 60px;
+
+            .content-block-title {
+            
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 37px;
+                letter-spacing: 0em;
+                text-align: left;
+    
+            }
+    
+            .content-block-text {
+               
+                font-size: 19px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: left;
+    
+            }
+        }
+    }
     .title {
         font-size: 38px;
         line-height: 46px;
@@ -277,6 +330,48 @@ body {
 
 @media (min-width: 1024px) {
 
+
+    .content {
+
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 60px;
+
+        .content-wrapper {
+            padding-left: 60px;
+        }
+
+        .wrapper {
+            padding-left: 0;
+            padding-right: 60px;
+        }
+
+        .content-title {
+            flex-direction: column;
+            padding-bottom: 0;
+            
+
+            .content-link {
+                
+                font-size: 38px;
+                font-weight: 700;
+                line-height: 46px;
+                letter-spacing: 0em;
+                text-align: right;
+                margin-bottom: 0;
+
+            }
+        }
+
+        .content-block {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-left: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: none;
+            padding-left: 60px;
+        }
+    }
+
    .services {
 
         .blocks {
@@ -357,6 +452,22 @@ body {
 
 @media (min-width: 1440px) {
 
+    .content {
+
+        .content-wrapper {
+            padding-left: 180px;
+        }
+
+        .wrapper {
+            padding-right: 180px;
+        }
+           
+        .content-block {         
+            padding-top: 43px;
+            padding-bottom: 43px;
+        }
+    }
+
     .slider {
 
         .slider-one {
@@ -413,6 +524,23 @@ body {
     .wrapper {
         padding-left: 160px;
         padding-right: 160px;
+    }
+
+    .content {
+
+        .content-wrapper {
+            padding-left: 280px;
+        }
+
+        .wrapper {
+            padding-right: 280px;
+        }
+           
+        .content-block {
+            
+            padding-top: 73px;
+            padding-bottom: 73px;
+        }
     }
 
     .slider {

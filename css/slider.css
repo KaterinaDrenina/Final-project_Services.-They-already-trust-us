@@ -14,6 +14,7 @@
 }
 .slider .slider-one .img-one {
   background-image: url(../images/image-mob.png);
+  background-size: cover;
 }
 .slider .slider-one .block {
   background-color: rgb(237, 237, 247);
@@ -40,7 +41,7 @@
   align-items: center;
   gap: 15px;
 }
-.slider .buttons input {
+.slider .buttons button {
   background-image: url(../images/Ellipse-active.svg);
   width: 17px;
   height: 16px;
@@ -48,10 +49,10 @@
   border: none;
   background-color: #fff;
 }
-.slider .buttons input:active {
+.slider .buttons button:active {
   opacity: 100%;
 }
-.slider .buttons input:first-child {
+.slider .buttons button:first-child {
   opacity: 100%;
 }
 

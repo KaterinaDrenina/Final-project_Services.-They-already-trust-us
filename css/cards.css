@@ -49,6 +49,7 @@
 .cards .cards-blocks .card-one .img {
   background-image: url(../images/card-one.png);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 200px;
 }
@@ -60,6 +61,7 @@
 .cards .cards-blocks .card-two .img {
   background-image: url(../images/card-two.png);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 200px;
 }
@@ -71,6 +73,7 @@
 .cards .cards-blocks .card-three .img {
   background-image: url(../images/card-three.png);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 200px;
 }
