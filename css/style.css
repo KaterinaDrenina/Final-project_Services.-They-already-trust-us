@@ -3,7 +3,6 @@
   padding-bottom: 60px;
   margin-bottom: 50px;
   position: relative;
-  border-radius: 0px 0px 12px 12px;
 }
 .services::after {
   content: "";
@@ -119,7 +118,6 @@
 }
 .partners-blocks .logo img {
   position: absolute;
-  border-radius: 12px 0px 0px 0px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -279,41 +277,84 @@
   color: rgb(0, 0, 0);
   margin: 0;
 }
-.cards .cards-blocks .card-one .img {
-  background-image: url(../images/card-one.png);
+.cards .cards-blocks .img {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 200px;
 }
-.cards .cards-blocks .card-one .img a {
+.cards .cards-blocks .img a {
   display: inline-block;
   width: 100%;
   height: 100%;
+}
+.cards .cards-blocks .card-one .img {
+  background-image: url(../images/card-one.png);
 }
 .cards .cards-blocks .card-two .img {
   background-image: url(../images/card-two.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 200px;
-}
-.cards .cards-blocks .card-two .img a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
 }
 .cards .cards-blocks .card-three .img {
   background-image: url(../images/card-three.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 200px;
 }
-.cards .cards-blocks .card-three .img a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+
+.content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.content .content-wrapper {
+  padding-left: 30px;
+}
+.content .content-title {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  overflow: auto;
+  padding-bottom: 30px;
+  white-space: nowrap;
+}
+.content .content-title .content-link {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(179, 179, 186);
+  margin: 0;
+  text-decoration: none;
+}
+.content .content-title .content-link:first-of-type {
+  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content .content-title .content-link:hover {
+  color: rgb(240, 20, 90);
+}
+.content .content-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-top: 4px solid rgba(255, 255, 255, 0.3);
+  padding-top: 30px;
+}
+.content .content-block .content-block-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+.content .content-block .content-block-text {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin: 0;
 }
 
 footer {
@@ -413,65 +454,6 @@ footer {
   letter-spacing: 0px;
   text-align: center;
   color: rgb(179, 179, 186);
-  margin: 0;
-}
-
-.content {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.content .content-wrapper {
-  padding-left: 30px;
-}
-.content .content-title {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  overflow: auto;
-  padding-bottom: 30px;
-  white-space: nowrap;
-}
-.content .content-title .content-link {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 37px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: rgb(179, 179, 186);
-  margin: 0;
-  text-decoration: none;
-}
-.content .content-title .content-link:first-of-type {
-  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.content .content-title .content-link:hover {
-  color: rgb(240, 20, 90);
-}
-.content .content-block {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  border-top: 4px solid rgba(255, 255, 255, 0.3);
-  padding-top: 30px;
-}
-.content .content-block .content-block-title {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: rgb(255, 255, 255);
-  margin: 0;
-}
-.content .content-block .content-block-text {
-  font-size: 19px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: rgb(255, 255, 255);
   margin: 0;
 }
 
@@ -798,6 +780,7 @@ body {
 
 main {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0px 0px 12px 12px;
 }
 
 .wrapper {
