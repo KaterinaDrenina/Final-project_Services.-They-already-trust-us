@@ -3,7 +3,6 @@
     padding-bottom: 60px;
     margin-bottom: 50px;
     position: relative;
-    border-radius: 0px 0px 12px 12px;
 
     &::after {
         content: '';
@@ -44,7 +43,7 @@
             content: '';
             background-image: url(../images/Arrow.svg);
             height: 12px;
-            width:12px;
+            width: 12px;
             position: absolute;
             top: 1px;
             left: 80px; 
