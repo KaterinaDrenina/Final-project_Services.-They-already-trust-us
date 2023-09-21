@@ -2,8 +2,8 @@
 @use 'partners.scss';
 @use 'slider.scss';
 @use 'cards.scss';
-@use 'footer.scss';
 @use 'content.scss';
+@use 'footer.scss';
 @import 'normalize.scss';
 @import 'fonts.scss';
 
@@ -13,6 +13,10 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+main {
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 
 .wrapper {
