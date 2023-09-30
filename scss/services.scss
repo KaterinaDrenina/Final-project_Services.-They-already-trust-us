@@ -26,42 +26,6 @@
         background-color: rgba(231, 231, 242, 1);
     }
 
-    a {
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
-        letter-spacing: 1px;
-        text-align: left;
-        text-decoration: none;
-        color: rgba(36, 163, 255, 1);
-        text-transform: uppercase;
-        position: relative;
-        cursor: pointer;
-
-        
-        &::after {
-            content: '';
-            background-image: url(../images/Arrow.svg);
-            height: 12px;
-            width: 12px;
-            position: absolute;
-            top: 1px;
-            left: 80px; 
-        }
-
-        &:hover {
-            color: rgba(240, 20, 90, 1);
-
-            &::after {
-                content: '';
-                background-image: url(../images/Arrowhover.svg);
-                height: 12px;
-                width: 12px;
-            }
-        }
-    }
-
-
     .title {
         margin-top: 10px;
     }

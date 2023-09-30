@@ -1,10 +1,11 @@
 .content {
+
     padding-top: 30px;
     padding-bottom: 30px;
 
-    .content-wrapper {
-        padding-left: 30px;
-    }
+    // .content-wrapper {
+    //     padding-left: 30px;
+    // }
 
     .content-title {
         display: flex;
@@ -27,8 +28,9 @@
 
             &:first-of-type {
                 background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-                 -webkit-background-clip: text;
-                 -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding-left: 30px;
 
             }
 

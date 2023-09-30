@@ -1,45 +1,80 @@
 .slider {
   min-width: 315px;
+  overflow: hidden;
 }
 .slider .img {
   background-repeat: no-repeat;
+  background-size: cover;
   height: 500px;
   width: 100%;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-.slider .slider-one {
-  display: grid;
-  margin-bottom: 30px;
-}
-.slider .slider-one .img-one {
-  background-image: url(../images/image-mob.png);
-  background-size: cover;
-}
-.slider .slider-one .block {
+.slider .block {
   background-color: rgb(237, 237, 247);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   padding: 30px;
 }
-.slider .slider-one .block .title {
+.slider .block .title {
   margin-top: 5px;
 }
-.slider .slider-one .block .subtitle {
+.slider .block .subtitle {
   color: rgb(179, 179, 186);
   margin: 0 0 6px 0;
 }
-.slider .slider-one .block .text {
+.slider .block .text {
   color: rgb(179, 179, 186);
 }
-.slider .slider-one .block::before {
-  content: "";
+.slider .slider-inner {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  column-gap: 30px;
+  transition-delay: 3s;
+  width: 100vw;
+  animation-name: slider;
+  animation-duration: 45s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.slider .slider-inner:hover {
+  animation-play-state: paused;
+}
+.slider .slider-inner .slider-one {
+  display: grid;
+}
+.slider .slider-inner .slider-one .img-one {
+  background-image: url(../images/image-mob.png);
+}
+.slider .slider-inner .slider-two {
+  display: grid;
+}
+.slider .slider-inner .slider-two .img-two {
+  background-image: url(../images/img-two.png);
+  background-position: -80px 0;
+}
+.slider .slider-inner .slider-three {
+  display: grid;
+}
+.slider .slider-inner .slider-three .img-three {
+  background-image: url(../images/img-three.png);
+  background-position: -80px 0;
+}
+@keyframes slider {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-800%);
+  }
 }
 .slider .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
+  margin-top: 30px;
 }
 .slider .buttons button {
   background-image: url(../images/Ellipse-active.svg);

@@ -4,6 +4,7 @@
 @use 'cards.scss';
 @use 'content.scss';
 @use 'footer.scss';
+@use 'header.scss';
 @import 'normalize.scss';
 @import 'fonts.scss';
 
@@ -98,11 +99,57 @@ main {
     text-align: left;
 }
 
+.phone {
+
+    a {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: right;
+        text-decoration: none;
+    }
+}
 
 @media (max-width: 768px) {
     
     .logo:nth-child(n+7) {
         display: none;
+    }
+
+    .header {
+
+        .header-info {
+
+            .header-contacts {
+
+                .location {
+                    display: none;
+                }
+        
+                .phone {
+                    &::before {
+                        display: none;
+                    }
+                }
+                
+                .img {
+                    display: none;
+                }
+        
+            }
+
+            .logo {
+
+                .company-logo {
+                    display: none;
+                }
+            }
+        }
+
+        .menu {
+            display: none;
+        }
     }
 }
 
@@ -113,15 +160,89 @@ main {
         padding-right: 60px;
     }
 
+    .header {
+
+        padding-top: 50px;
+        padding-left: 60px;
+
+        .header-info {
+
+            display: grid;
+            grid-template-areas:
+             "c"
+             "l"
+             "n";
+            row-gap: 30px;
+
+            .header-contacts {
+
+                grid-area: c;
+                padding: 0;
+                background-color: inherit;
+                justify-content: start;
+
+                .location {
+                    display: inline-block;
+                }
+        
+                .phone {
+                    &::before {
+                        display: inline-block;
+                    }
+                }
+                
+                .img {
+                    display: inline-block;
+                }
+        
+            }
+
+            .logo {
+
+                grid-area: l;
+                display: block;
+                padding: 0;
+            
+                .services-logo {
+                    display: none;
+                }
+
+                .company-logo {
+                    display: block;
+                }
+
+            }
+            
+            .nav {
+
+                grid-area: n;
+
+                .menu {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    margin: 0;
+                    padding: 0;
+                }
+    
+                
+                .burger {
+                    display: none;
+                }
+
+                .layer {
+                    display: none;
+                }
+            }
+        }
+
+        
+    }
+
     .content {
 
         padding-top: 60px;
         padding-bottom: 60px;
-
-        .content-wrapper {
-
-            padding-left: 60px;
-        }
 
         .content-title {
 
@@ -135,6 +256,9 @@ main {
                 letter-spacing: 0em;
                 text-align: left;
     
+                &:first-of-type {
+                    padding-left: 60px;
+                }
             }
         }
 
@@ -179,41 +303,57 @@ main {
 
         .blocks {
 
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             gap: 60px;
-            
         }
     
     }
 
-    
     .slider {
 
-        .slider-one {
-        
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr auto;
-            
-            .img-one {
-                background-image: url(../images/image-tablet.png);
-                width: 100%;
-            }
-            
+        .slider-inner {
+
+            grid-template-columns: repeat(9, 648px);
+
             .text {
                 margin: 0;
             }
+
+            .slider-one {
+            
+                .img-one {
+                    background-image: url(../images/image-tablet.png);
+                    width: 100%;
+                }
+                
+            }
+    
+            .slider-two {
+    
+                .img-two {
+                    background-position: 0 -57px;
+                }
+                
+            }
+    
+            .slider-three {
+                
+                .img-three {
+                    background-position: 0 -57px;
+                }
+                
+            }
         }
     }
-    
     
     .partners {
         
         .partners-blocks {
 
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
             
             .logo {
                 display: block;
@@ -239,10 +379,6 @@ main {
                 .img {
                     background-image: url(../images/card-one-tablet.png);
                     width: 100%;
-                }
-    
-                .block {
-                    padding-bottom: 132px;
                 }
             }
     
@@ -330,7 +466,6 @@ main {
         }
 
         .copyright {
-
             grid-area: copyright;
         }
     }
@@ -338,6 +473,36 @@ main {
 
 @media (min-width: 1024px) {
 
+
+    .header {
+
+        padding-right: 60px;
+        background-size: contain;
+        background-position: 50% 50%;
+
+        .header-info {
+
+            grid-template-areas:
+             "l c"
+             "l n";
+            justify-content: space-between;
+            row-gap: 15px;
+
+            .header-contacts {
+
+                .location {
+                    color: rgba(255, 255, 255, 1);
+
+                }
+            }
+            .nav {
+
+                .menu {
+                    justify-content: end;
+                }
+            }
+        }
+    }
 
     .content {
 
@@ -361,13 +526,12 @@ main {
             
             .content-link {
                 
-                font-size: 38px;
-                font-weight: 700;
-                line-height: 46px;
-                letter-spacing: 0em;
                 text-align: right;
                 margin-bottom: 0;
-
+                
+                &:first-of-type {
+                    padding-left: 0;
+                }
             }
         }
 
@@ -384,80 +548,107 @@ main {
    .services {
 
         .blocks {
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
         }
    }
 
    .slider {
 
-    .slider-one {
+        .slider-inner {
 
-        grid-template-columns: auto auto;
-        grid-template-rows: 1fr;
+            grid-template-columns: repeat(9, 904px);
 
-        .img-one {
+            .img {
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 12px;
+                width: 400px;
+                height: 528px;
+            }
 
-            background-image: url(../images/image-tabletHD.png);
-            border-top-right-radius: 0;
-            border-bottom-left-radius: 12px;
-            width: 400px;
-            height: 528px;
+            .block {
+                border-top-right-radius: 12px;
+                border-bottom-left-radius: 0;
+            }
+
+            .slider-one {
+
+                grid-template-columns: auto auto;
+                grid-template-rows: 1fr;
+        
+                .img-one {
+                    background-image: url(../images/image-tabletHD.png);
+                    width: 400px;
+                    height: 528px;
+                }
+        
+            }
+
+            .slider-two {
+                grid-template-columns: auto auto;
+                grid-template-rows: 1fr;
+
+                .img-two {
+                    background-position: -80px 0;
+                }
+            }
+
+            .slider-three {
+                grid-template-columns: auto auto;
+                grid-template-rows: 1fr;
+
+                .img-three {
+                    background-position: -80px 0;
+                }
+            }
         }
 
-        .block {
-            border-top-right-radius: 12px;
-            border-bottom-left-radius: 0;
-        }
-    }
+    
    }
 
    .partners {
 
         .partners-blocks {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
         }
        
    }
 
    .cards {
 
-    .cards-blocks {
+       .cards-blocks {
+       
+           grid-template-areas: 
+           "card-one card-two card-three";
+           grid-template-columns: repeat(3, 1fr);
+           grid-template-rows: 1fr;
+       
+          .card-one {
+              
+               .img {
+                   background-image: url(../images/card-one-tablerhd.png);
+               }
+       
+           }
+       
+           .card-two {
+       
+               .img {
+                   background-image: url(../images/card-two-tablethd.png);
+               }
+       
+           }
+       
+           .card-three {
+              
+               .img {
+                   background-image: url(../images/card-three-tablethd.png);
+               }
+           }
+       }
 
-        grid-template-areas: 
-        "card-one card-two card-three";
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-
-       .card-one {
-           
-            .img {
-                background-image: url(../images/card-one-tablerhd.png);
-            }
-
-        }
-
-        .card-two {
-           
-            .img {
-                background-image: url(../images/card-two-tablethd.png);
-            }
-
-        }
-
-        .card-three {
-           
-            .img {
-                background-image: url(../images/card-three-tablethd.png);
-            }
-
-            .block {
-                padding-bottom: 110px;
-            }
-        }
     }
-   }
 }
 
 @media (min-width: 1440px) {
@@ -480,14 +671,39 @@ main {
 
     .slider {
 
-        .slider-one {
+        .slider-inner {
 
-            .img-one {
-                background-image: url(../images/image-desktopSD.png);
+            grid-template-columns: repeat(9, 1320px);
+
+            .img {
                 height: 344px;
             }
+
+            .slider-one {
     
+                .img-one {
+                    background-image: url(../images/image-desktopSD.png);
+                    height: 344px;
+                }
+        
+            }
+
+            .slider-two {
+
+                .img-two {
+                    background-position: 0 -30px;
+                }
+            }
+
+            .slider-three {
+
+                .img-three {
+                    background-position: 0 0;
+                }
+            }
+        
         }
+        
     }
 
     .cards {
@@ -498,10 +714,6 @@ main {
     
                 .img {
                     background-image: url(../images/card-one-desktopsd.png);
-                }
-    
-                .block {
-                    padding-bottom: 92px;
                 }
     
             }
@@ -520,9 +732,6 @@ main {
                     background-image: url(../images/card-three-desktopsd.png);
                 }
     
-                .block {
-                    padding-bottom: 70px;
-                }
             }
         }
     }
@@ -536,18 +745,27 @@ main {
         padding-right: 160px;
     }
 
+    .header {
+
+        padding-left: 160px;
+        padding-right: 160px;
+
+    }
+
     .content {
 
+        max-width: 1360px;
+        margin: 0 auto;
+
         .content-wrapper {
-            padding-left: 280px;
+            padding-left: 0;
         }
 
         .wrapper {
-            padding-right: 280px;
+            padding-right: 0;
         }
            
-        .content-block {
-            
+        .content-block {          
             padding-top: 73px;
             padding-bottom: 73px;
         }
@@ -555,37 +773,63 @@ main {
 
     .slider {
 
-        .slider-one {
-    
-            .img-one {
-                background-image: url(../images/image-desktop.png);
+        .slider-inner {
+
+            grid-template-columns: repeat(9, 1600px);
+
+            .img {
                 height: 298px;
             }
+
+            .slider-one {
     
+                .img-one {
+                    background-image: url(../images/image-desktop.png);
+                    height: 298px;
+                }
+        
+            }
+
+            .slider-two {
+
+                .img-two {
+                    background-position: 0 -70px;
+                }
+            }
+
+            .slider-three {
+
+                .img-three {
+                    background-position: 0 -70px;
+                }
+            }
         }
     }
     
-    .partners-blocks {
+    .partners {
+
+        .partners-blocks {
         
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 60px;
-       
-        .hillel {
-            border-top-left-radius: 12px;
-        }
-        
-        .look {
-            border-top-right-radius: 12px;
-        }
-       
-        .infratek {
-            border-bottom-left-radius: 12px;
-        }
-       
-        .ultimate {
-            border-bottom-right-radius: 12px;
+            margin-top: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;
+           
+            .hillel {
+                border-top-left-radius: 12px;
+            }
+            
+            .look {
+                border-top-right-radius: 12px;
+            }
+           
+            .infratek {
+                border-bottom-left-radius: 12px;
+            }
+           
+            .ultimate {
+                border-bottom-right-radius: 12px;
+            }
         }
     }
 
@@ -599,9 +843,6 @@ main {
                     background-image: url(../images/card-one-desktop.png);
                 }
     
-                .block {
-                    padding-bottom: 72px;
-                }
             }
     
             .card-two {
@@ -618,9 +859,6 @@ main {
                     background-image: url(../images/card-three-desktop.png);
                 }
     
-                .block {
-                    padding-bottom: 50px;
-                }
             }
     
         }

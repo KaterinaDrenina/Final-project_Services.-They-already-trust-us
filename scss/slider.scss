@@ -1,58 +1,108 @@
 .slider {
     
     min-width: 315px;
+    overflow: hidden;
     
     .img {
+
         background-repeat: no-repeat;
+        background-size: cover;
         height: 500px;
         width: 100%;
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
     }
-    
-    .slider-one {
-        display: grid;
-        margin-bottom: 30px;
-       
-        .img-one {
-            background-image: url(../images/image-mob.png);
-            background-size: cover;
+
+    .block {
+
+        background-color: rgba(237, 237, 247, 1);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        padding: 30px;
+        
+        .title {
+            margin-top: 5px;
         }
         
-        .block {
-            background-color: rgba(237, 237, 247, 1);
-            border-bottom-left-radius: 12px;
-            border-bottom-right-radius: 12px;
-            padding: 30px;
-            
-            .title {
-                margin-top: 5px;
-            }
-            
-            .subtitle {
-                color: rgba(179, 179, 186, 1);
-                margin: 0 0 6px 0;
-            }
-            
-            .text {
-                color: rgba(179, 179, 186, 1);
-            }
+        .subtitle {
+            color: rgba(179, 179, 186, 1);
+            margin: 0 0 6px 0;
+        }
+        
+        .text {
+            color: rgba(179, 179, 186, 1);
+        }
+        
+    }
     
-            &::before {
-                content: '';
-    
+    .slider-inner {
+        
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        column-gap: 30px;
+        transition-delay: 3s;
+        width: 100vw;
+        animation-name: slider;
+        animation-duration: 45s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        
+        
+        &:hover {
+            animation-play-state: paused;
+        }
+        
+        .slider-one {
+            
+            display: grid;
+            
+            .img-one {
+                background-image: url(../images/image-mob.png);
             }
             
+        }
+        
+        .slider-two {
+            
+            display: grid;
+            
+            .img-two {
+                background-image: url(../images/img-two.png);
+                background-position: -80px 0;
+            }
+        }
+        
+        .slider-three {
+            
+            display: grid;
+            
+            .img-three {
+                background-image: url(../images/img-three.png);
+                background-position: -80px 0;
+            }
         }
     }
     
     
+    @keyframes slider {
+        
+        from {
+            transform: translateX(0%);
+        }
+        
+        to {
+            transform: translateX(-800%);
+        }
+    }
     
     .buttons {
+
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 15px;
+        margin-top: 30px;
         
         button {
             background-image: url(../images/Ellipse-active.svg);
@@ -72,28 +122,4 @@
         }
 
     }
-
-    // .second-slide {
-    //     &:active {
-            
-    //         .slider-two {
-    //             display: block;
-    //         }
-    //     }
-    // }
-    // .slider-two {
-    //     display: none;
-
-    //     .img-two {
-    //         background-image: url(../images/img-two.png);
-    //     }
-    // }
-    
-    // .slider-three {
-    //     display: none;
-       
-    //     .img-three {
-    //         background-image: url(../images/img3-mob.png);
-    //     }
-    // }
 }

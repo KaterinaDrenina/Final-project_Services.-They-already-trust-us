@@ -66,5 +66,12 @@
 .cards .cards-blocks .card-three .img {
   background-image: url(../images/card-three.png);
 }
+.cards .cards-blocks > div {
+  display: flex;
+  flex-direction: column;
+}
+.cards .cards-blocks > div .block {
+  flex-grow: 1;
+}
 
 /*# sourceMappingURL=cards.css.map */
