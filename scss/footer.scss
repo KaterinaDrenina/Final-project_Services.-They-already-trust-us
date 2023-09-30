@@ -81,10 +81,6 @@ footer {
                 height: 100%;
             }
         }
-    
-        .phone {
-            margin: 0;
-        }
 
         .email {
             margin: 0;
@@ -105,15 +101,20 @@ footer {
             
         }
     
-        .phone a{
-            color: rgba(70, 70, 110, 1);
-            text-align: right;
+        .phone {
+
+            margin: 0;
+
+            a{
+                color: rgba(70, 70, 110, 1);
+            }
         }
         
     }
 
 
     .copyright {
+        
         font-size: 16px;
         font-weight: 400;
         line-height: 20px;

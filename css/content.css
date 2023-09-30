@@ -2,9 +2,6 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.content .content-wrapper {
-  padding-left: 30px;
-}
 .content .content-title {
   display: flex;
   flex-direction: row;
@@ -27,6 +24,7 @@
   background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-left: 30px;
 }
 .content .content-title .content-link:hover {
   color: rgb(240, 20, 90);

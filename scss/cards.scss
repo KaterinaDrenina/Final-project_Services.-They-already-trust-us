@@ -74,7 +74,7 @@
         }
 
         .card-one {
-        
+
             .img {
                 background-image: url(../images/card-one.png);
             }
@@ -82,7 +82,7 @@
         }
     
         .card-two {
-    
+
             .img {
                 background-image: url(../images/card-two.png);
             }
@@ -100,5 +100,14 @@
 
     }
     
+    .cards-blocks > div {
+
+        display: flex;
+        flex-direction: column;
+
+        .block {
+            flex-grow: 1;
+        }
+    }
 
 }
