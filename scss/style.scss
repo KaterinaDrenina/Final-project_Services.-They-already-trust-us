@@ -5,6 +5,7 @@
 @use 'content.scss';
 @use 'footer.scss';
 @use 'header.scss';
+@use 'service_page.scss';
 @import 'normalize.scss';
 @import 'fonts.scss';
 
@@ -19,6 +20,29 @@ body {
 main {
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 10px;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+        border-radius: 0px 0px 12px 12px;
+        background-color: rgba(202, 202, 219, 1);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 10px;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+        border-radius: 0px 0px 12px 12px;
+        background-color: rgba(231, 231, 242, 1);
+    }
 }
 
 .wrapper {
@@ -469,6 +493,61 @@ main {
             grid-area: copyright;
         }
     }
+
+    .header_service_entry_page {
+
+        .header-info {
+            .logo {
+
+                .services-logo {
+                    display: block;
+                    
+                    img {
+                        width: 302px;
+                        height: 60px;
+                    }
+                }
+            }
+
+            .nav {
+
+                .menu :nth-child(2) {
+                    a {
+                        color: rgba(240, 20, 90, 1);
+                        border-bottom: 2px solid rgba(240, 20, 90, 1);
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .services_entry_page {
+
+        .block-consult {
+            padding: 60px 0;
+        }
+
+        .block-description {
+            grid-template-areas: 
+            's s'
+            'one two';
+            column-gap: 60px;
+
+            .subtitle {
+                grid-area: s;
+            }
+
+            .block_one {
+                grid-area: one;
+                
+            }
+    
+            .block_two {
+                grid-area: two;
+            }
+        }
+    }
 }
 
 @media (min-width: 1024px) {
@@ -735,6 +814,13 @@ main {
             }
         }
     }
+
+    .services_entry_page {
+        .wrapper {
+            padding-left: 180px;
+            padding-right: 180px;
+        }
+    }
 }
 
 
@@ -861,6 +947,13 @@ main {
     
             }
     
+        }
+    }
+
+    .services_entry_page {
+        .wrapper {
+            padding-left: 280px;
+            padding-right: 280px;
         }
     }
 }

@@ -1,0 +1,107 @@
+.header_service_entry_page {
+  background-image: none;
+  grid-template-rows: 1fr;
+  height: fit-content;
+  padding-bottom: 0;
+}
+.header_service_entry_page .logo {
+  width: 169px;
+  height: 57px;
+}
+.header_service_entry_page .nav .layer .mobile-menu .mobile-menu-link:nth-of-type(2) {
+  color: rgb(240, 20, 90);
+}
+
+.services_entry_page {
+  margin-bottom: 60px;
+}
+.services_entry_page .block-consult {
+  display: grid;
+  gap: 30px;
+  justify-items: center;
+  padding: 30px 0;
+}
+.services_entry_page .block-consult .icon {
+  width: 92px;
+  height: 92px;
+  padding: 14px;
+  border-radius: 24px;
+  gap: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.services_entry_page .block-consult p {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+.services_entry_page .block-consult .button {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  width: 208px;
+  height: 56px;
+  padding: 18px 30px 18px 30px;
+  border-radius: 12px;
+  gap: 10px;
+  background-color: rgb(36, 163, 255);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+}
+.services_entry_page .block-consult .title {
+  margin: 0;
+}
+.services_entry_page .block-description {
+  border-top: 4px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding-bottom: 60px;
+  display: grid;
+  gap: 30px;
+}
+.services_entry_page .block-description .subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.services_entry_page .block-description .block_one, .services_entry_page .block-description .block_two {
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.services_entry_page .block-description .block_one p, .services_entry_page .block-description .block_two p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+.services_entry_page .block-description .block_one p::before, .services_entry_page .block-description .block_two p::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  top: 12px;
+  left: -13px;
+  background-color: rgb(240, 20, 90);
+}
+
+/*# sourceMappingURL=service_page.css.map */

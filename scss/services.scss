@@ -2,29 +2,6 @@
     
     padding-bottom: 60px;
     margin-bottom: 50px;
-    position: relative;
-
-    &::after {
-        content: '';
-        position: absolute;
-        height: 10px;
-        bottom: -10px;
-        left: 20px;
-        right: 20px;
-        border-radius: 0px 0px 12px 12px;
-        background-color: rgba(202, 202, 219, 1);
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        height: 10px;
-        bottom: -20px;
-        left: 40px;
-        right: 40px;
-        border-radius: 0px 0px 12px 12px;
-        background-color: rgba(231, 231, 242, 1);
-    }
 
     .title {
         margin-top: 10px;
