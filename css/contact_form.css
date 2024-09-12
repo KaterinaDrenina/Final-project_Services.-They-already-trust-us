@@ -1,0 +1,117 @@
+.dialog-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(245, 245, 250);
+  box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.5);
+  width: 650px;
+  padding: 30px;
+  border-radius: 12px;
+}
+.dialog-form input {
+  display: block;
+  width: 100%;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+}
+.dialog-form .input-message-common {
+  padding: 15px;
+  border-radius: 8px;
+}
+.dialog-form .dialog-form-title {
+  font-size: 41px;
+  font-weight: 700;
+  line-height: 46px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  margin: 0px 0px 30px 0px;
+}
+.dialog-form .dialog-form-name {
+  margin-bottom: 15px;
+}
+.dialog-form .dialog-form-message {
+  height: 130px;
+  position: relative;
+  resize: none;
+  width: 100%;
+  border: 1px;
+  margin-bottom: 30px;
+}
+.dialog-form .dialog-form-message ::placeholder {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.dialog-form .fieldset {
+  margin-bottom: 30px;
+  border: none;
+  padding: 0;
+}
+.dialog-form .fieldset label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgb(179, 179, 186);
+  text-transform: uppercase;
+}
+.dialog-form .fieldset .fieldset-number {
+  margin: 15px 0;
+}
+.dialog-form .dialog-form-button {
+  width: 100%;
+  padding: 18px 30px 18px 30px;
+  border-radius: 12px;
+  background-color: rgb(36, 163, 255);
+  box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.5);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+}
+.dialog-form .dialog-form-button :hover {
+  background-color: rgb(0, 133, 255);
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+}
+.dialog-form .dialog-form-closebtn {
+  cursor: pointer;
+  border: none;
+  background-color: rgb(245, 245, 250);
+  position: absolute;
+  top: 25px;
+  right: 24px;
+}
+.dialog-form .dialog-form-closebtn img:hover {
+  border-radius: 8px;
+  background-color: rgb(230, 230, 240);
+}
+.dialog-form ::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(179, 179, 186);
+}
+
+.layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(50, 50, 100, 0.7);
+}
+
+.lorem {
+  color: rgba(236, 233, 233, 0);
+}
+
+/*# sourceMappingURL=contact_form.css.map */

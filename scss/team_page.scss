@@ -1,0 +1,128 @@
+.team_page{
+
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    .wrapper{
+
+        .title {
+            margin: 0;
+            padding-bottom: 30px;
+        }
+
+        .team_pics{
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .pic{
+                height: 300px;
+                width: 100%;
+                border-radius: 12px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin: 0 0 15px 0;
+            }
+
+            .person_sign{
+                display: grid;
+                grid-template-areas: 
+                "name btn"
+                "position position";
+                grid-template-columns: 1fr auto;
+                align-items: center;
+
+            }
+
+            .name{
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 19.5px;
+                text-align: left;
+                color: rgba(50, 50, 100, 1);
+                margin: 0;
+                grid-area: name;
+                grid-column: 1;
+
+            }
+
+            .position{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: left;
+                color: rgba(179, 179, 186, 1);
+                margin: 0;
+                grid-area: position;
+                grid-column: 1;
+            }
+
+            .team-button{
+                width: 32px;
+                height: 32px;
+                background-color: #fff;
+                border: none;
+                grid-area: btn;
+                padding: 0;
+                grid-column: 2;
+                justify-self: end;
+
+                svg:hover path {
+                    stroke: #F0145A;
+                    transition: 1s;
+                }
+
+                svg:hover circle {
+                    fill: #EDEDF7;
+                    transition: 1s;
+                }
+            }
+
+            .block {
+                height: 362px;
+                width: 315px;
+            }
+
+            .alex{
+
+                .alex_pic{
+                    background-image: url(../images/team_alex.jpg);
+                }
+
+                
+            }
+
+            .evgen{
+                .evgen_pic{
+                    background-image: url(../images/team_evgen.jpg);
+                }
+            }
+
+            .vlad{
+                .vlad_pic{
+                    background-image: url(../images/team_vlad.jpg);
+                }
+            }
+
+            .serg{
+                .serg_pic{
+                    background-image: url(../images/team_serg.jpg);
+                }
+            }
+
+            .oks{
+                .oks_pic{
+                    background-image: url(../images/team_oks.jpg);
+                }
+            }
+
+            .jul{
+                .jul_pic{
+                    background-image: url(../images/team_jul.jpg);
+                }
+            }
+        }
+    }
+}

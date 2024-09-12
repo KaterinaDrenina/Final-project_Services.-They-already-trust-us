@@ -5,7 +5,12 @@
 @use 'content.scss';
 @use 'footer.scss';
 @use 'header.scss';
-@use 'service_page.scss';
+@use 'it_page.scss';
+@use 'contact_form.scss';
+@use 'gdpr_page.scss';
+@use 'contact_page.scss';
+@use 'about_page.scss';
+@use 'team_page.scss';
 @import 'normalize.scss';
 @import 'fonts.scss';
 
@@ -175,6 +180,57 @@ main {
             display: none;
         }
     }
+
+    .header_light {
+
+        .header-info {
+
+            .nav {
+                .layer {
+                    .mobile-menu {
+                        z-index: 10;
+                    }
+                }
+            }
+
+            .header-contacts {
+
+                .location {
+                    display: none;
+                }
+        
+                .phone {
+                    &::before {
+                        display: none;
+                    }
+                }
+                
+                .img {
+                    display: none;
+                }
+        
+            }
+
+        }
+
+        .menu {
+            display: none;
+        }
+    }
+
+    .dialog-form {
+        width: 375px;
+
+        .dialog-form-title {
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+        .dialog-form-message {
+            width: 100%;
+        }
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -182,6 +238,127 @@ main {
     .wrapper {
         padding-left: 60px;
         padding-right: 60px;
+    }
+
+    .publications {
+
+        padding-top: 60px;
+        
+        .wrapper {
+            padding-left: 60px;
+            padding-right: 60px;
+
+            .publications_block {
+                .img_block {
+                    img {
+                        height: 500px;
+                    }
+                    .subtitle {
+                        font-size: 30px;
+                        line-height: 37px;
+                    }
+                }
+            }
+
+            .article_block {
+
+                .subtitle {
+                    font-size: 22px;
+                    line-height: 27px;
+                }
+            }
+
+            .adv_block {
+                img {
+                    height: 398px;
+                }
+            }
+
+            .final_block {
+                .subtitle {
+                    font-size: 22px;
+                    line-height: 27px;
+                }
+            }
+        }
+
+    }
+
+    .header_light {
+
+        padding-top: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 60px;
+    
+        .header-info {
+    
+                display: grid;
+                grid-template-areas:
+                 "c"
+                 "l"
+                 "n";
+                row-gap: 30px;
+    
+                .header-contacts {
+    
+                    grid-area: c;
+                    padding: 0;
+                    background-color: inherit;
+                    justify-content: start;
+    
+                    .location {
+                        display: inline-block;
+                    }
+            
+                    .phone {
+                        &::before {
+                            display: inline-block;
+                        }
+                    }
+                    
+                    .img {
+                        display: inline-block;
+                        top: 0px;
+                    }
+            
+                }
+
+                .logo {
+           
+                    grid-area: l;
+                    padding: 0;
+
+                    a img {
+                        width: 100%;
+                        height: 60px;
+                   }
+                }
+                
+                .nav {
+    
+                    grid-area: n;
+    
+                    .menu {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 15px;
+                        margin: 0;
+                        padding: 0;
+                        
+
+                    }
+
+                    .burger {
+                        display: none;
+                    }
+    
+                    .layer {
+                        display: none;
+                    }
+                }
+        }
+    
     }
 
     .header {
@@ -319,9 +496,8 @@ main {
     
     .services {
         
-        margin-bottom: 80px;
-        
         .title {
+            margin-top: 60px;
             margin-bottom: 60px;
         }
 
@@ -431,17 +607,18 @@ main {
 
     .footer {
 
-        display: grid;
-        grid-template-areas:
-        "info copyright"
-        "contacts contacts";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-between;
+        padding: 0 125px;
 
         .info {
-            grid-area: info;
+
             flex-direction: row;
             padding: 0;
             gap: 0;
+            align-self: start;
 
             .location {
 
@@ -458,8 +635,7 @@ main {
         }
 
         .contacts {
-
-            grid-area: contacts;
+           
             flex-direction: row;
             padding: 0;
             gap: 0;
@@ -489,9 +665,7 @@ main {
             }
         }
 
-        .copyright {
-            grid-area: copyright;
-        }
+        
     }
 
     .header_service_entry_page {
@@ -548,10 +722,140 @@ main {
             }
         }
     }
+
+    .contacts {
+
+        .wrapper {
+            padding-left: 60px;
+            padding-right: 60px;
+
+            .info {
+                padding-bottom: 60px;
+                padding-top: 60px;
+            }
+
+            .form {
+                padding-bottom: 60px;
+            }
+        }
+    }
+
+    .aboutus_info {
+
+        .wrapper {
+            .advantages_block {
+                .advantages-item {
+                    .icon-number {
+                        .number {
+                            font-size: 36px;
+                            line-height: 43.88px;
+                            text-align: center;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .team_img {
+
+            height: 234px;
+
+            .img_sign {
+                font-size: 46px;
+                line-height: 56px;
+                letter-spacing: 63px;
+            }
+        }
+    }
+
+    .achievements-block {
+        .wrapper {
+            .ach-cards {
+                
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+
+                .award {
+                    display: block;
+                    background-size: 106px 40px;
+                }
+
+                .leader {
+                    display: block;
+                    background-size: 130px 40px;
+                }
+
+                .ulf {
+                    display: block;
+                    background-size: 111px 40px;
+                }
+
+            }
+
+            .buttons {
+                .hide {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .team_page{
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        .wrapper {
+            .title{
+                padding-bottom: 60px;
+            }
+
+            .team_pics{
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 60px;
+
+                .pic{
+                    height: 400px;
+                }
+
+                .block{
+                    width: 294px;
+                    height: 462px;
+                }
+            }
+
+        }
+    }
+    
 }
 
 @media (min-width: 1024px) {
 
+    .header_light {
+    
+        .header-info {
+
+            grid-template-areas:
+            "l c"
+            "l n";
+            row-gap: 15px;
+            padding: 0;
+
+            .header-contacts {
+                justify-content: end;
+                align-items: flex-start;
+                height: 25px;
+
+            }
+
+            .nav .menu {
+                justify-content: end;
+                align-items: flex-start;
+            }
+        }
+    }
 
     .header {
 
@@ -728,9 +1032,184 @@ main {
        }
 
     }
+
+    .footer {
+
+        display: grid;
+        grid-template-areas:
+        "info copyright"
+        "contacts contacts";
+        justify-content: space-between;
+        padding: 0;
+
+        .info {
+            grid-area: info;
+            flex-direction: row;
+            padding: 0;
+            gap: 0;
+
+            .location {
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    background-color: rgba(179, 179, 186, 1);
+                    margin: 3px 10px;
+                }
+            }
+        }
+
+        .contacts {
+
+            grid-area: contacts;
+            flex-direction: row;
+            padding: 0;
+            gap: 0;
+            align-self: start;
+
+            .phone {
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    background-color: rgba(179, 179, 186, 1);
+                    margin: 3px 10px;
+                }
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    background-color: rgba(179, 179, 186, 1);
+                    margin: 3px 10px;
+                }
+            }
+        }
+
+        .copyright {
+            grid-area: copyright;
+        }
+    }
+
+    .contacts {
+
+        .wrapper {
+            display: flex;
+            gap: 60px;
+
+            .info {
+                width: 50%;
+            }
+
+            .form {
+                width: 50%;
+            }
+        }
+    }
+
+    .aboutus_info {
+
+        .text_block {
+
+            flex-direction: row;
+            margin-bottom: 60px;
+
+           
+            .intro_block {
+                flex: 1.5;
+            }
+
+            .advantages_block {
+                flex: 1;
+            }
+        }
+
+        .team_img {
+            height: 311px;
+
+            .img_sign {
+                font-size: 86px;
+                line-height: 105px;
+                width: 448px;
+            }
+        }
+
+        .quality-block {
+
+            flex-direction: row;
+            gap: 60px;
+            margin-top: 60px;
+
+            .quality-item {
+                flex: 1.5;
+            }
+
+            .quality-title {
+                flex: 1;
+            }
+        }
+    }
+
+    .achievements-block {
+        .wrapper{
+            .ach-cards{
+                .legal {
+                    background-size: 80px 60px;
+                }
+
+                .award {
+                    background-size: 159px 60px;
+                }
+
+                .leader {
+                    background-size: 195px 60px;
+                }
+
+                .ulf{
+                    background-size: 166px 60px;
+                }
+            }
+            
+        }
+    }
+
+    .team_page{
+        padding-top: 0;
+
+        .wrapper{
+            .title{
+                padding-left: 180px;
+                padding-right: 180px;
+            }
+
+            .team_pics{
+    
+                .block{
+                    width: 261px;
+                }
+            }
+        }
+
+        
+    }
 }
 
 @media (min-width: 1440px) {
+
+    .publications {
+        .wrapper {
+            padding-left: 180px;
+            padding-right: 180px;
+        }
+    }
 
     .content {
 
@@ -819,6 +1298,52 @@ main {
         .wrapper {
             padding-left: 180px;
             padding-right: 180px;
+        }
+    }
+
+    .contacts {
+
+        .wrapper {
+            padding-left: 180px;
+            padding-right: 180px;
+        }
+    }
+
+    .achievements-block {
+        .wrapper{
+            .ach-cards {
+                .card {
+                    height: 110px;
+                }
+            }
+        }
+    }
+
+    .aboutus_info {
+        .wrapper {
+            padding-left: 180px;
+            padding-right: 180px;
+        }
+
+        .team_img {
+            height: 438px;
+
+            .img_sign{
+                font-size: 96px;
+                line-height: 117.02px;
+                width: 478px;
+            }
+        }
+    }
+
+    .team_page {
+        .wrapper{
+            .team_pics{
+                .block{
+                    width: 400px;
+                    height: 462px;
+                }
+            }
         }
     }
 }
@@ -954,6 +1479,42 @@ main {
         .wrapper {
             padding-left: 280px;
             padding-right: 280px;
+        }
+    }
+
+    .contacts {
+        
+        .wrapper {
+            padding-left: 280px;
+            padding-right: 280px;
+        }
+    }
+
+    .aboutus_info {
+        .wrapper {
+            padding-right: 280px;
+            padding-left: 280px;
+        }
+
+        .team_img {
+            height: 584px;
+        }
+    }
+
+    .achievements-block {
+        .wrapper {
+            padding-right: 160px;
+            padding-left: 160px;
+        }
+    }
+
+    .team_page {
+        .wrapper{
+            .team_pics{
+                .block{
+                    width: 493px;
+                }
+            }
         }
     }
 }
