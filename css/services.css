@@ -1,9 +1,6 @@
 .services {
   padding-bottom: 60px;
-  margin-bottom: 50px;
-}
-.services .title {
-  margin-top: 10px;
+  margin-bottom: 30px;
 }
 .services .blocks {
   display: grid;
@@ -17,7 +14,7 @@
   background-color: rgb(255, 255, 255);
   margin-bottom: 30px;
 }
-.services .blocks .block h3 {
+.services .blocks .block h3 a {
   font-size: 22px;
   font-weight: 700;
   line-height: 27px;
@@ -26,6 +23,10 @@
   color: rgb(36, 163, 255);
   margin-top: 0;
   margin-bottom: 15px;
+  text-decoration: none;
+}
+.services .blocks .block h3 :hover {
+  color: #F0145A;
 }
 .services .blocks .block .services-text {
   line-height: 26px;

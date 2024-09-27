@@ -1,11 +1,11 @@
 .services {
     
     padding-bottom: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
-    .title {
-        margin-top: 10px;
-    }
+    // .title {
+    //     margin-top: 10px;
+    // }
 
     .blocks {
 
@@ -24,14 +24,21 @@
             }
         
             h3 {
-                font-size: 22px;
-                font-weight: 700;
-                line-height: 27px;
-                letter-spacing: 0em;
-                text-align: left;
-                color: rgba(36, 163, 255, 1);
-                margin-top: 0;
-                margin-bottom: 15px;
+                a {
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 27px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: rgba(36, 163, 255, 1);
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                    text-decoration: none;
+                }
+
+                :hover {
+                    color: #F0145A;
+                }
             }
         
             .services-text {

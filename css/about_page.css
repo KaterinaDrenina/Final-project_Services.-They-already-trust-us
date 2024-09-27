@@ -1,0 +1,174 @@
+.header_light .header-info {
+  padding-bottom: 0;
+}
+.header_light .header-info .nav .menu .current_page a {
+  color: #F0145A;
+  border-bottom: 2px solid rgb(240, 20, 90);
+}
+
+.aboutus_info {
+  padding-top: 30px;
+}
+.aboutus_info .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.aboutus_info .wrapper .title {
+  margin: 0;
+}
+.aboutus_info .wrapper .text {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+.aboutus_info .wrapper .intro_block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.aboutus_info .wrapper .advantages_block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-left: 4px solid rgb(230, 230, 240);
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+.aboutus_info .wrapper .advantages_block .advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.aboutus_info .wrapper .advantages_block .advantages-item .icon-number {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.aboutus_info .wrapper .advantages_block .advantages-item .icon-number .icon {
+  width: 32px;
+  height: 32px;
+}
+.aboutus_info .wrapper .advantages_block .advantages-item .icon-number .number {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 0em;
+  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.aboutus_info .wrapper .advantages_block .advantages-item .description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: rgb(50, 50, 100);
+  margin: 0;
+}
+.aboutus_info .team_img {
+  background-image: url(../images/team.jpg);
+  height: 114px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.aboutus_info .team_img .img_sign {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 13px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin: 0;
+  opacity: 80%;
+  display: block;
+}
+.aboutus_info .quality-block {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.aboutus_info .quality-block .quality-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.achievements-block {
+  padding-top: 30px;
+  background-color: rgb(245, 245, 250);
+}
+.achievements-block .wrapper {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.achievements-block .wrapper .subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.07px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(50, 50, 100);
+  margin: 0;
+}
+.achievements-block .wrapper .ach-cards .card {
+  height: 90px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.achievements-block .wrapper .ach-cards .legal {
+  background-image: url(../images/achievment-1.svg);
+  background-size: 53px 40px;
+}
+.achievements-block .wrapper .ach-cards .award {
+  display: none;
+  background-image: url(../images/achievment-2.svg);
+}
+.achievements-block .wrapper .ach-cards .leader {
+  display: none;
+  background-image: url(../images/Achievment-3.svg);
+}
+.achievements-block .wrapper .ach-cards .ulf {
+  display: none;
+  background-image: url(../images/Achievment-4.svg);
+}
+.achievements-block .wrapper .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.achievements-block .wrapper .buttons button {
+  background-image: url(../images/Ellipse-active.svg);
+  width: 17px;
+  height: 16px;
+  opacity: 20%;
+  border: none;
+  background-color: #fff;
+}
+.achievements-block .wrapper .buttons button:active {
+  opacity: 100%;
+}
+.achievements-block .wrapper .buttons button:first-child {
+  opacity: 100%;
+}
+
+/*# sourceMappingURL=about_page.css.map */
