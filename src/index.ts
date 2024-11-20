@@ -1,20 +1,3 @@
-const scrollLinks: NodeListOf<HTMLAnchorElement> = document.querySelectorAll('.scroll-link');
-
-scrollLinks.forEach(link => {
-    link.addEventListener('click', function (e: Event) {
-        e.preventDefault();
-        const href: string = this.getAttribute('href')!;
-        const targetElement = document.querySelector(href) as HTMLElement;
-        if (targetElement) {
-            const offsetTop = targetElement.offsetTop;
-
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
 
 const scrollToTopBtn: HTMLElement | null = document.getElementById('scrollToTopBtn');
 
